@@ -1,0 +1,24 @@
+# R project files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.here
+
+# R-specific
+.renv/
+renv.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Credentials (do not commit keys/tokens)
+.Renviron
+.env
+secrets/
