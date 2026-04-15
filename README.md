@@ -22,9 +22,9 @@ Both modules emphasize reusable helper functions (smith_search, scrape_imdb_movi
 
 ## Results
 
-**Smithsonian**: Pagination query for "elephant" returns ~4700+ records across Smithsonian departments. Sample extraction yields tibble with id, title, link, object_type (unnested), date, name, data_source, unitCode, record_ID.
+**Smithsonian**: Pagination query for "artificial intelligence" returns 10 records across Smithsonian departments. Sample extraction yields tibble with id, title, link, object_type (unnested), data_source, unitCode, record_ID, content and resp_list.
 
-**NASA APOD**: Jan-Apr 2023 sample (120 days) yields 120 records with date, title, media_type (image/video), explanation_length, has_copyright flag, URLs. Demonstrates weak relationship between title length and explanation length.
+**NASA APOD**: Jan 2023 sample (10 days) yields 10 records with date, title, media_type (image/video), title_length, has_copyright flag, URLs and copyright. Demonstrates weak relationship between title length and explanation length.
 
 **IMDB Foreign Films**: 25-row snapshot with Rank, Title, Year, Run_time (period), MPAA_rating, Metascore, Star_rating (numeric 0-10), Votes (numeric counts), Plot, Country. Ready for modeling (Star_rating vs. Metascore shows no significant relationship in sample).
 
