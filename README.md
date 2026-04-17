@@ -152,3 +152,7 @@ movies_clean <- clean_imdb_movies(movies_raw)
 - Metascore: Missing for many IMDB films (returns NA)
 - APOD copyright: Optional field; NULL for public-domain images
 - Smithsonian: Fields like object_type, data_source, unitCode, and record_ID return NA for library/archive records where those metadata paths do not exist in the JSON response
+
+## License
+
+MIT
