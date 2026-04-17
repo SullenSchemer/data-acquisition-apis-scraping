@@ -13,8 +13,8 @@ source(here::here("src/scraping/scrape_imdb_foreign_films.R"))
 
 cat("=== IMDB TOP FOREIGN FILMS SCRAPING ===\n")
 
-# For demo, use a cached HTML snapshot (if available in data_raw/)
-html_path <- here::here("data_raw", "imdb_html_25-09-17.html")
+# For demo, use a cached HTML snapshot (if available in data/)
+html_path <- here::here("data", "imdb_html_25-09-17.html")
 
 if (file.exists(html_path)) {
   # Parse cached HTML
@@ -58,7 +58,7 @@ if (file.exists(html_path)) {
 
 } else {
   cat("HTML file not found at", html_path, "\n")
-  cat("To run this demo, provide a cached IMDB HTML snapshot in data_raw/\n")
+  cat("To run this demo, provide a cached IMDB HTML snapshot in data/\n")
 }
 
 cat("\n=== STRATEGY NOTES ===\n")
